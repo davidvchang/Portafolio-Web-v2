@@ -72,11 +72,11 @@ function NavBar() {
   }
 
   return (
-    <section className='flex flex-row justify-between px-5 py-2'>
+    <section className='flex flex-row justify-between items-center px-5 py-2'>
         {/* TITLE OR LOGO SECTION*/}
-        <div className='hidden sm:flex sm:flex-row gap-1'>
-            <span className='text-3xl font-bold'>David</span>
-            <span className='text-3xl font-bold text-Blue-Principal'>Valenzuela</span>
+        <div className='hidden sm:flex sm:flex-row gap-2'>
+            <span className='text-4xl font-bold'>David</span>
+            <span className='text-4xl font-bold text-Blue-Principal'>Valenzuela</span>
         </div>
 
         {/*  MOVIL - TITLE OR LOGO SECTION*/}
@@ -111,7 +111,7 @@ function NavBar() {
         {/* MOVIL - CONTAINER NAVBAR OPENED MENU */}
         {menuOpened &&  (
 
-        <div className='flex flex-col absolute top-0 left-0 w-full bg-slate-300 lg:hidden lg:gap-10 transition-all duration-300'>
+        <div className='flex flex-col absolute z-50 top-0 left-0 w-full bg-slate-300 lg:hidden lg:gap-10 transition-all duration-300'>
           {/* CONTAINER NAV */}
           <div className='flex justify-between px-5 py-2 border-b'>
             <div className='flex flex-row lg:hidden'>

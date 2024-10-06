@@ -4,7 +4,7 @@ import NavBar from "./pages/NavBar"
 function App() {
 
   return (
-    <main className="font-inter-Font w-full">
+    <main className="font-inter-Font w-full h-full">
       <NavBar/>
       <Home/>
     </main>

@@ -7,17 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        "Blue-Principal": "#0085FF"
+        "Blue-Principal": "#0085FF",
+        "Blue-Photo-BG": "#7193BE"
+      },
+
+      fontFamily: {
+        "inter-Font": ["Inter", "sans-serif"]
+      },
+  
+      height: {
+        '90': '22rem',
+      },
+      width: {
+        '90': '22rem',
+        '85': '21rem',
+      },
+      borderWidth: {
+        '6': "6px"
       }
     },
-
-    fontFamily: {
-      "inter-Font": ["Inter", "sans-serif"]
-    },
-
-    height: {
-      '90': '22rem',
-    }
   },
   plugins: [],
 }
