@@ -72,7 +72,7 @@ function NavBar() {
   }
 
   return (
-    <section className='flex flex-row justify-between items-center px-5 py-2'>
+    <section className='flex flex-row justify-between items-center px-5 py-2 w-full'>
         {/* TITLE OR LOGO SECTION*/}
         <div className='hidden sm:flex sm:flex-row gap-2'>
             <span className='text-4xl font-bold'>David</span>

@@ -12,7 +12,8 @@ export default {
       },
 
       fontFamily: {
-        "inter-Font": ["Inter", "sans-serif"]
+        "inter-Font": ["Inter", "sans-serif"],
+        "Poppins" : ["Poppins", "sans-serif"]
       },
   
       height: {
