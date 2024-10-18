@@ -88,8 +88,8 @@ function NavBar() {
         <div className='hidden lg:flex lg:gap-10'>
           {/* CONTAINER NAV */}
           <div className='flex flex-row items-center gap-5 w-96 justify-around text-lg'>
-              <a href="#" className='hover:text-Blue-Principal hover:transition-colors duration-300'>Sobre mi</a>
-              <a href="#" className='hover:text-Blue-Principal hover:transition-colors duration-300'>Proyectos</a>
+              <a href="#aboutMe" className='hover:text-Blue-Principal hover:transition-colors duration-300'>Sobre mi</a>
+              <a href="#projects" className='hover:text-Blue-Principal hover:transition-colors duration-300'>Proyectos</a>
               <a href="#" className='hover:text-Blue-Principal hover:transition-colors duration-300'>Contactame</a>
 
           </div>

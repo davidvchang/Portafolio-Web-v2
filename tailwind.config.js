@@ -25,7 +25,11 @@ export default {
       },
       borderWidth: {
         '6': "6px"
-      }
+      },
+      screens: {
+        'portrait': {'raw': '(orientation: portrait)'},
+        'landscape': {'raw': '(orientation: landscape)'},
+      },
     },
   },
   plugins: [],

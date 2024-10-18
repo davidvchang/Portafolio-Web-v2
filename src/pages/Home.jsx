@@ -3,22 +3,22 @@ import PhotoPerfil from '../assets/img/FotoPerfil.webp'
 
 function Home() {
   return (
-    <section className='flex flex-col-reverse 2xl:flex-row w-full h-screen items-center justify-around'>
+    <section className='flex flex-col-reverse 2xl:flex-row w-full h-screen items-center justify-center md:justify-center gap-5 md:gap-10 lg:gap-10 2xl:gap-20 min-h-fit'>
 
       {/* CONTAINER PRESENTATION */}
       <div className=' flex gap-8 flex-col items-center xl:items-start'>
         <div className='flex flex-col gap-3'>
           <div className='flex flex-col lg:flex-row gap-3 '>
-            <span className='text-7xl font-semibold text-center'>Hola, soy</span>
-            <span className='text-7xl font-semibold text-Blue-Principal text-center'>David Valenzuela</span>
+            <span className='text-5xl lg:text-7xl font-semibold text-center'>Hola, soy</span>
+            <span className='text-5xl lg:text-7xl font-semibold text-Blue-Principal text-center'>David Valenzuela</span>
 
           </div>
-          <span className='text-2xl text-slate-600 font-light pl-2 text-center xl:text-left'>Ing. en Sistemas Computacionales | Desarrollador Web</span>
+          <span className='text-xl lg:text-2xl text-slate-600 font-light pl-2 text-center 2xl:text-left'>Ing. en Sistemas Computacionales | Desarrollador Web</span>
         </div>
 
         <a href="https://drive.google.com/file/d/1ddlBcf2YW0uaSeU5FJqyc21bL-chScLN/view?usp=sharing" 
           target='_blank'
-          className='px-12 py-4 bg-Blue-Principal w-fit text-slate-200 font-semibold rounded-md hover:opacity-80 hover:transition-opacity duration-300 flex gap-2 justify-center items-center'>
+          className='px-12 py-4 self-center xl:self-start bg-Blue-Principal w-fit text-slate-200 font-semibold rounded-md hover:opacity-80 hover:transition-opacity duration-300 flex gap-2 justify-center items-center'>
             {iconViewCV}
             Ver CV
         </a>
@@ -33,7 +33,7 @@ function Home() {
       </div>
 
       {/* CONTAINER ARROW DOWN ANIMATION */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce ">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce md:flex lg:hidden xl:flex hidden">
         {iconArrowDown}
       </div>
     </section>
