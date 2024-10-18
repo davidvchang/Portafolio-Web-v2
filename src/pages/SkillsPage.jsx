@@ -3,7 +3,7 @@ import Skills from '../components/Skills'
 
 function SkillsPage() {
   return (
-    <section className='flex flex-col gap-10 items-center lg:w-8/12 w-full'>
+    <section className='flex flex-col gap-10 items-center lg:w-8/12 w-full dark:text-white text-black'>
         <span className='text-3xl border-b border-b-slate-500 w-full flex items-center gap-2 font-semibold'>{iconTitle} Habilidades</span>
         <div className='flex flex-wrap gap-x-5 gap-y-[10px] pb-10 lg:px-0 px-4 justify-center lg:justify-start'>
             <Skills logo={iconReact} name='React'/>

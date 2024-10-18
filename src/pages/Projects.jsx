@@ -6,7 +6,7 @@ import BtnActionProject from '../components/btnActionProject'
 
 function Projects() {
   return (
-    <section className='flex flex-col lg:w-8/12 w-full' id='projects'>
+    <section className='flex flex-col lg:w-8/12 w-full dark:text-white text-black' id='projects'>
         <span className='text-3xl border-b border-b-slate-500 w-full flex items-center gap-2 font-semibold'>{iconTitle} Proyectos</span>
 
         <Project 

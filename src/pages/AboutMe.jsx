@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <section className='flex flex-col lg:w-8/12 w-full  items-center justify-around gap-5 ' id='aboutMe'>
+    <section className='flex flex-col lg:w-8/12 w-full  items-center justify-around gap-5  dark:text-white text-black' id='aboutMe'>
       <span className='text-3xl flex gap-2 border-b border-b-slate-500 w-full font-semibold'>{iconTitle} Sobre mi</span>
 
       <div className='flex flex-col py-3 w-full pb-10 lg:px-0 px-4'>

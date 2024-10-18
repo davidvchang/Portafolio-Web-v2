@@ -3,7 +3,7 @@ import PhotoPerfil from '../assets/img/FotoPerfil.webp'
 
 function Home() {
   return (
-    <section className='flex flex-col-reverse 2xl:flex-row w-full h-screen items-center justify-center md:justify-center gap-5 md:gap-10 lg:gap-10 2xl:gap-20 min-h-fit'>
+    <section className='flex flex-col-reverse 2xl:flex-row w-full h-screen items-center justify-center md:justify-center gap-5 md:gap-10 lg:gap-10 2xl:gap-20 min-h-fit dark:text-white text-black'>
 
       {/* CONTAINER PRESENTATION */}
       <div className=' flex gap-8 flex-col items-center xl:items-start'>
@@ -13,7 +13,7 @@ function Home() {
             <span className='text-5xl lg:text-7xl font-semibold text-Blue-Principal text-center'>David Valenzuela</span>
 
           </div>
-          <span className='text-xl lg:text-2xl text-slate-600 font-light pl-2 text-center 2xl:text-left'>Ing. en Sistemas Computacionales | Desarrollador Web</span>
+          <span className='text-xl lg:text-2xl text-slate-600 dark:text-slate-500 font-light pl-2 text-center 2xl:text-left'>Ing. en Sistemas Computacionales | Desarrollador Web</span>
         </div>
 
         <a href="https://drive.google.com/file/d/1ddlBcf2YW0uaSeU5FJqyc21bL-chScLN/view?usp=sharing" 

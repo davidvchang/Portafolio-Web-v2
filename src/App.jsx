@@ -7,7 +7,7 @@ import SkillsPage from "./pages/SkillsPage"
 function App() {
 
   return (
-    <main className="font-Poppins w-full h-full flex flex-col items-center">
+    <main className="font-Poppins w-full h-full flex flex-col items-center dark:bg-slate-900 bg-white">
       <NavBar/>
       <Home/>
       <AboutMe/>

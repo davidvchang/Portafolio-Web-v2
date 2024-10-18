@@ -62,6 +62,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 function NavBar() {
 
   const [menuOpened, setMenuOpened] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleOpenMenu = () => {
     setMenuOpened(true)
@@ -71,17 +72,27 @@ function NavBar() {
     setMenuOpened(false)
   }
 
+   // Alternar el tema oscuro/claro
+   const handleThemeChange = () => {
+    setDarkMode(!darkMode); 
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }
+
   return (
-    <section className='flex flex-row justify-between items-center px-5 py-2 w-full'>
+    <section className='flex flex-row justify-between items-center px-5 py-2 w-full dark:text-white text-black'>
         {/* TITLE OR LOGO SECTION*/}
         <div className='hidden sm:flex sm:flex-row gap-2'>
-            <span className='text-4xl font-bold'>David</span>
+            <span className='text-4xl font-bold '>David</span>
             <span className='text-4xl font-bold text-Blue-Principal'>Valenzuela</span>
         </div>
 
         {/*  MOVIL - TITLE OR LOGO SECTION*/}
         <div className='flex flex-row sm:hidden'>
-            <span className='text-6xl font-bold'>D</span>
+            <span className='text-6xl font-bold dark:bg-slate-900'>D</span>
             <span className='text-6xl font-bold text-Blue-Principal'>V</span>
         </div>
 
@@ -96,7 +107,7 @@ function NavBar() {
 
           {/* ENABLE OR DISABLE DARK MODE */}
           <div>
-            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} />
+            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} checked={darkMode} onChange={handleThemeChange}/>} />
           </div>
           
         </div>
@@ -111,7 +122,7 @@ function NavBar() {
         {/* MOVIL - CONTAINER NAVBAR OPENED MENU */}
         {menuOpened &&  (
 
-        <div className='flex flex-col absolute z-50 top-0 left-0 w-full bg-slate-300 lg:hidden lg:gap-10 transition-all duration-300'>
+        <div className='flex flex-col absolute z-50 top-0 left-0 w-full bg-slate-300 dark:bg-slate-800 lg:hidden lg:gap-10 transition-all duration-300'>
           {/* CONTAINER NAV */}
           <div className='flex justify-between px-5 py-2 border-b'>
             <div className='flex flex-row lg:hidden'>
@@ -134,7 +145,7 @@ function NavBar() {
 
           {/* ENABLE OR DISABLE DARK MODE */}
           <div className='w-full flex justify-end pb-5'>
-            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />} />
+            <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} checked={darkMode} onChange={handleThemeChange}/>} />
           </div>
           
         </div>
