@@ -1,5 +1,6 @@
 @use './variables';
 @use './styles/navbar';
+@use './styles/home';
 
 *{
     padding: 0;
@@ -11,7 +12,7 @@
     background: #111827;
     font-family: "Poppins", sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     min-height: 100vh;

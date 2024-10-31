@@ -1,0 +1,74 @@
+@use '../variables' as variables;
+
+.home {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 200px;
+
+    .imageContainer {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        background-color: #7193BE;
+        border-radius: 100%;
+        border: 5px solid variables.$Azul-Principal;
+
+        .photoPrincipal {
+            position: absolute;
+            width: 264px;
+            height: 300px;
+            border-radius: 100%;
+            object-fit: cover;
+            left: -8px;
+            top: -50px;
+        }
+    }
+
+    .presentationContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .containerNameInfo {
+            display: flex;
+            flex-direction: column;
+
+            .Hi {
+                font-weight: 300;
+                font-size: 32px;
+            }
+    
+            h1 {
+                font-size: 64px;
+                font-weight: 500;
+                color: variables.$Azul-Principal;
+            }
+    
+            .Profession {
+                font-weight: 200;
+                font-size: 24px;
+            }
+        }
+
+
+        .btnCV {
+            text-decoration: none;
+            color: white;
+            background-color: variables.$Background-Secundary;
+            width: fit-content;
+            padding: 14px 70px;
+            border-radius: 5px;
+            border: 1px solid #1A395C;
+        }
+
+        .btnCV:hover {
+            background-color: variables.$Azul-Principal;
+            transition: all;
+            transition-duration: 0.3s;
+        }
+    }
+}
