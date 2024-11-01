@@ -17,7 +17,7 @@ function Home() {
                 <span className='Profession'>Ing. en Sistemas Computacionales</span>
             </div>
 
-            <a href="#" className='btnCV'>
+            <a href="https://drive.google.com/file/d/1ddlBcf2YW0uaSeU5FJqyc21bL-chScLN/view?usp=sharing" target='_blank' className='btnCV'>
                 Ver CV
             </a>
         </div>

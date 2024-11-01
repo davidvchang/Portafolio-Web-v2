@@ -1,5 +1,6 @@
 import Home from './pages/Home'
 import NavBar from './pages/NavBar'
+import Projects from './pages/Projects'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <main className='main'>
       <NavBar/>
       <Home/>
+      <Projects/>
     </main>
   )
 }
