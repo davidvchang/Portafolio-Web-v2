@@ -1,6 +1,7 @@
 import Home from './pages/Home'
 import NavBar from './pages/NavBar'
 import Projects from './pages/Projects'
+import Skills from './pages/Skills'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <NavBar/>
       <Home/>
       <Projects/>
+      <Skills/>
     </main>
   )
 }
