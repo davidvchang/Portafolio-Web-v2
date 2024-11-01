@@ -1,0 +1,97 @@
+@use '../variables' as variables;
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: variables.$Background-Secundary;
+    padding: 50px 0;
+    gap: 40px;
+
+    span {
+        color: white;
+        font-size: 32px;
+    }
+
+    .experiencesContainer {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        gap: 30px;
+
+        .experienceCard {
+            display: flex;
+            flex-direction: column;
+            background-color: #374151;
+            border-radius: 14px;
+            padding: 30px;
+            border: 1px solid #1A395C;
+
+            .position {
+                font-size: 28px;
+                font-weight: 400;
+            }
+
+            .companyContainer {
+                display: flex;
+                gap: 5px;
+
+                .iconCompany {
+                    color: variables.$Azul-Principal;
+                }
+                .company {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: variables.$Azul-Principal;
+                }
+            }
+
+            .timeContainer {
+                display: flex;
+                gap: 5px;
+                padding-top: 5px;
+
+                .iconCalendar {
+                    color: #818996;
+                }
+                .time {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #9498a0;
+                }
+            }
+
+            .descriptionContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                padding-top: 20px;
+
+                .descriptionJob {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+
+                    .iconRightArrow {
+                        color: variables.$Azul-Principal;
+                    }
+
+                    p {
+                        color: white;
+                    }
+                }
+            }
+
+
+            // p {
+            //     font-size: 18px;
+            //     font-weight: 400;
+            //     color: white;
+            // }
+    
+        }
+    }
+
+}

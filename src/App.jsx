@@ -1,3 +1,4 @@
+import Experience from './pages/Experience'
 import Home from './pages/Home'
 import NavBar from './pages/NavBar'
 import Projects from './pages/Projects'
@@ -11,6 +12,7 @@ function App() {
       <Home/>
       <Projects/>
       <Skills/>
+      <Experience/>
     </main>
   )
 }
