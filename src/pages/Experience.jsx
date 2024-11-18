@@ -4,12 +4,12 @@ import DescriptionJob from '../components/DescriptionJob'
 
 function Experience() {
   return (
-    <section className='experience'>
+    <section className='experience' id='experience'>
         <span>Experiencia Profesional</span>
 
         {/* EXPERIENCES CONTAINER */}
         <div className='experiencesContainer'>
-            <ExperienceCard position='Desarrollador Web' iconCompany={iconCompany} company='Clever Cloud' iconCalendar={iconCalendar} time='Julio 2024 - Actualidad' 
+            <ExperienceCard position='Desarrollador Web' ShowOrHiden={iconDownArrow} iconCompany={iconCompany} company='Clever Cloud' iconCalendar={iconCalendar} time='Julio 2024 - Actualidad' idDescription={"descriptionCleverCloud"}
                 children={
                     <>
                         <DescriptionJob icon={iconRightArrow} description='Desarrollo de aplicaciones web utilizando Vue.js, PHP, JavaScript, CSS y Bootstrap.'/>
@@ -37,6 +37,11 @@ const iconCalendar = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox
 const iconRightArrow = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 iconRightArrow" width={22} height={22}>
 <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
 </svg>
+
+const iconDownArrow = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.2} stroke="currentColor" width={22} height={22} className="size-6">
+<path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+</svg>
+
 
 
 

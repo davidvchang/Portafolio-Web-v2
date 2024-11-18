@@ -3,7 +3,7 @@ import FotoPerfil from '../assets/img/FotoPerfil.webp'
 
 function Home() {
   return (
-    <section className='home'>
+    <section className='home' id='home'>
         {/* IMAGE CONTAINER */}
         <div className='imageContainer'>
             <img src={FotoPerfil} alt="Foto de perfil" className='photoPrincipal'/>

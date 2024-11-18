@@ -1,3 +1,4 @@
+import ContactMe from './pages/ContactMe'
 import Experience from './pages/Experience'
 import Home from './pages/Home'
 import NavBar from './pages/NavBar'
@@ -13,6 +14,7 @@ function App() {
       <Projects/>
       <Skills/>
       <Experience/>
+      <ContactMe/>
     </main>
   )
 }

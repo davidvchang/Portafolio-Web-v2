@@ -1,0 +1,57 @@
+@use '../variables' as variables;
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 40px;
+
+    span {
+        color: white;
+        font-size: 32px;
+    }
+
+    p {
+        color: white;
+    }
+
+    .infoContactMe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+        width: 60%;
+
+        .containerInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            background-color: variables.$Background-Secundary;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #1A395C;
+            width: fit-content;
+
+            .contactMeIcons {
+                color: white;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+
+        .containerInfo:hover {
+            background-color: variables.$Azul-Principal;
+            transition: all;
+            transition-duration: 0.3s;
+        }
+
+        .containerInfo:visited {
+            color: white;
+        }
+    }
+}

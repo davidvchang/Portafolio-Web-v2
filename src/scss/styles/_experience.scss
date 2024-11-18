@@ -28,46 +28,82 @@
             padding: 30px;
             border: 1px solid #1A395C;
 
-            .position {
-                font-size: 28px;
-                font-weight: 400;
-            }
-
-            .companyContainer {
+            .containerTop {
                 display: flex;
-                gap: 5px;
+                flex-direction: column;
 
-                .iconCompany {
-                    color: variables.$Azul-Principal;
+                .positionShowBtnContainer {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .position {
+                        font-size: 28px;
+                        font-weight: 400;
+                    }
+    
+                    button {
+                        padding: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+                        border: 0;
+                        width: fit-content;
+                        height: fit-content;
+                    }
+    
+                    button:hover {
+                        opacity: 0.7;
+                        cursor: default;
+                        transition: all;
+                        transition-duration: 0.3s;
+                    }
                 }
-                .company {
-                    font-size: 18px;
-                    font-weight: 400;
-                    color: variables.$Azul-Principal;
+    
+    
+                .companyContainer {
+                    display: flex;
+                    gap: 5px;
+    
+                    .iconCompany {
+                        color: variables.$Azul-Principal;
+                    }
+                    .company {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: variables.$Azul-Principal;
+                    }
+                }
+    
+                .timeContainer {
+                    display: flex;
+                    gap: 5px;
+                    padding-top: 5px;
+    
+                    .iconCalendar {
+                        color: #818996;
+                    }
+                    .time {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #9498a0;
+                    }
                 }
             }
 
-            .timeContainer {
-                display: flex;
-                gap: 5px;
-                padding-top: 5px;
-
-                .iconCalendar {
-                    color: #818996;
-                }
-                .time {
-                    font-size: 18px;
-                    font-weight: 400;
-                    color: #9498a0;
-                }
-            }
 
             .descriptionContainer {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 justify-content: center;
-                padding-top: 20px;
+                padding-top: 0;
+
+                opacity: 0;
+                max-height: 0; /* Inicialmente colapsado */
+                visibility: hidden;
+                overflow: hidden; /* Impide que el contenido se desborde */
+                transition: max-height 0.3s ease, opacity 0.3s ease;
 
                 .descriptionJob {
                     display: flex;
@@ -83,13 +119,6 @@
                     }
                 }
             }
-
-
-            // p {
-            //     font-size: 18px;
-            //     font-weight: 400;
-            //     color: white;
-            // }
     
         }
     }
