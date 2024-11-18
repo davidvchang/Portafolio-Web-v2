@@ -14,13 +14,15 @@
 
     p {
         color: white;
+        text-align: center;
     }
 
     .infoContactMe {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         row-gap: 20px;
+        column-gap: 10px;
         width: 60%;
 
         .containerInfo {
@@ -52,6 +54,29 @@
 
         .containerInfo:visited {
             color: white;
+        }
+    }
+
+    .socialNetworkContainer {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        gap: 20px;
+
+        a {
+            display: flex;
+            width: fit-content;
+
+            .socialsIcons {
+                color: white;
+            }
+
+            .socialsIcons:hover {
+                opacity: 0.6;
+                transition: all;
+                transition-duration: 0.3s;
+            }
+
         }
     }
 }
