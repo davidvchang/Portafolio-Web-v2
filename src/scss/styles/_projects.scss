@@ -163,3 +163,22 @@
         }
     }
 }
+
+@media screen and (max-width: 640px) {
+    .projects {
+        .projectsContainer {
+            width: 100%;
+
+            .projectCard {
+                border-radius: 0;
+
+                .titleDescriptionContainer {
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
