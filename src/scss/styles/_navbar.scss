@@ -43,3 +43,11 @@
         }
     }
 }
+
+@media screen and (max-width: 640px) {
+    .navBar {
+        .containerNav {
+            display: none;
+        }
+    }
+}

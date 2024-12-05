@@ -61,6 +61,7 @@
 
             .technologiesContainer {
                 display: flex;
+                flex-wrap: wrap;
                 width: 100%;
                 gap: 10px;
                 justify-content: center;
@@ -93,6 +94,18 @@
 
                 .technology.Sass {
                     background-color: #8f1414;
+                }
+
+                .technology.TypeScript {
+                    background-color: #3178C6;
+                }
+
+                .technology.Express {
+                    background-color: #4a9e4a;
+                }
+
+                .technology.PostgreSQL {
+                    background-color: #336791;
                 }
 
                 .technology:hover {
