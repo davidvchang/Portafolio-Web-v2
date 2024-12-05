@@ -124,3 +124,15 @@
     }
 
 }
+
+@media screen and (max-width: 640px) {
+    .experience {
+        .experiencesContainer {
+            width: 100%;
+
+            .experienceCard {
+                border-radius: 0;
+            }
+        }
+    }
+}
