@@ -64,3 +64,11 @@
         }
     }
 }
+
+@media screen and (max-width: 640px) {
+    .skills {
+        .skillsContainer {
+            width: 100%;
+        }
+    }
+}
