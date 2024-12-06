@@ -24,6 +24,10 @@
         font-weight: 600;
     }
 
+    .btnMenu {
+        display: none;
+    }
+
     .containerNav {
         display: flex;
         // width: 750px;
@@ -46,8 +50,53 @@
 
 @media screen and (max-width: 640px) {
     .navBar {
+
+        padding: 0 20px;
+
+        span {
+            font-size: 48px;
+        }
+
+        .btnMenu {
+            display: flex;
+            background-color: transparent;
+            border: none;
+            padding: 5px;
+
+            .btn {
+                color: variables.$Azul-Principal;
+            }
+        }
         .containerNav {
-            display: none;
+            display: flex; 
+            flex-direction: column;
+            position: absolute;
+            top: 3.8rem;
+            left: 0;
+            width: 100%;
+            background: #000000;
+            align-items: center;
+            gap: 40px;
+            padding: 20px 10px;
+            border-bottom: 1px solid #1A395C;
+
+            /* Estados iniciales para la animación */
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, opacity 0.3s;
+
+            &.active {
+                max-height: 500px; /* Ajusta según el contenido máximo */
+                opacity: 1;
+            }
+
+            a {
+                width: 100%;
+                height: fit-content;
+                text-align: center;
+                padding: 10px 0;
+            }
         }
     }
 }
