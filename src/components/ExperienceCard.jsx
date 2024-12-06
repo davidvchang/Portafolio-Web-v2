@@ -1,21 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function ExperienceCard({position, ShowOrHiden, iconCompany, company, iconCalendar, time, children, idDescription}) {
 
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleDescription = () => {
-    const description = document.getElementById(`${idDescription}`);
-    if (description.style.opacity === "0") {
-      description.style.visibility = "visible";
-      description.style.maxHeight = "130px";
-      description.style.opacity = "1";
-      description.style.paddingTop = "20px";
-    } else {
-        description.style.visibility = "hidden";
-        description.style.maxHeight = "0"; 
-        description.style.opacity = "0";
-        description.style.paddingTop = "0";
-    }
+
+    setIsVisible(!isVisible);
   }
 
 
@@ -39,7 +30,7 @@ function ExperienceCard({position, ShowOrHiden, iconCompany, company, iconCalend
 
         </div>
 
-        <div className='descriptionContainer' id={`${idDescription}`}>
+        <div className={`descriptionContainer ${isVisible ? 'visible' : ''}`} id={`${idDescription}`}>
             {children}
         </div>
     </div>

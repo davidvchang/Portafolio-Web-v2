@@ -100,10 +100,17 @@
                 padding-top: 0;
 
                 opacity: 0;
-                max-height: 0; /* Inicialmente colapsado */
+                max-height: 0;
                 visibility: hidden;
-                overflow: hidden; /* Impide que el contenido se desborde */
+                overflow: hidden;
                 transition: max-height 0.3s ease, opacity 0.3s ease;
+
+                &.visible {
+                    opacity: 1;
+                    max-height: 130px;
+                    visibility: visible;
+                    padding-top: 20px;
+                }
 
                 .descriptionJob {
                     display: flex;
@@ -132,6 +139,28 @@
 
             .experienceCard {
                 border-radius: 0;
+
+                .descriptionContainer {
+
+                    &.visible {
+                        max-height: 320px;
+                    }
+
+                    .descriptionJob {
+                        position: relative;
+                        
+                        .iconRightArrow {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        p {
+                            padding-left: 30px;
+                        }
+                    }
+                }
+
             }
         }
     }
