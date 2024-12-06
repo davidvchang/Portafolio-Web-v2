@@ -164,13 +164,85 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) and (orientation: portrait) {
     .projects {
         .projectsContainer {
             width: 100%;
 
             .projectCard {
                 border-radius: 0;
+
+                .titleDescriptionContainer {
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) and (orientation: portrait) {
+    .projects {
+        .projectsContainer {
+            width: 100%;
+
+            .projectCard {
+
+                .titleDescriptionContainer {
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    .projects {
+        .projectsContainer {
+            width: 100%;
+
+            .projectCard {
+
+                .titleDescriptionContainer {
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
+    .projects {
+        .projectsContainer {
+            width: 100%;
+
+            .projectCard {
+
+                .titleDescriptionContainer {
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1536px) and (orientation: landscape) {
+    .projects {
+        .projectsContainer {
+            width: 100%;
+
+            .projectCard {
 
                 .titleDescriptionContainer {
                     span {
