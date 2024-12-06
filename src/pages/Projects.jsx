@@ -4,7 +4,7 @@ import PelisDev from '../assets/img/Portadas/MockUpPelisDev.webp'
 import ClonX from '../assets/img/Portadas/MockUpClonX.webp'
 import Desarrollo from '../assets/img/Portadas/En-desarrollo-portada.webp'
 import Technology from '../components/Technology'
-import BtnAction from '../components/btnAction'
+import BtnAction from '../components/BtnAction'
 
 function Projects() {
   return (
