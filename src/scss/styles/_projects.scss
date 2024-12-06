@@ -219,6 +219,42 @@
     }
 }
 
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    .projects {
+        .projectsContainer {
+            width: 100%;
+
+            .projectCard {
+
+                .titleDescriptionContainer {
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .projects {
+        .projectsContainer {
+            width: 90%;
+
+            .projectCard {
+
+                .titleDescriptionContainer {
+                    span {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
     .projects {
         .projectsContainer {

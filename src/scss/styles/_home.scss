@@ -205,3 +205,50 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-bottom: 24px;
+
+        .imageContainer {
+            width: 240px;
+            height: 240px;
+            top: 140px;
+
+            .photoPrincipal {
+                width: 254px;
+                height: 290px;
+            }
+        }
+
+        .presentationContainer {
+            align-items: center;
+            
+            .containerNameInfo {
+    
+                .Hi {
+                    font-size: 28px;
+                    text-align: center;
+                }
+        
+                h1 {
+                    font-size: 64px;
+                    text-align: center;
+                    line-height: 1;
+                }
+        
+                .Profession {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+
+            .btnCV {
+                padding: 12px 68px;
+            }
+        }
+    }
+}
