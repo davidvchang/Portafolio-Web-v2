@@ -9,7 +9,7 @@ function Experience() {
 
         {/* EXPERIENCES CONTAINER */}
         <div className='experiencesContainer'>
-            <ExperienceCard position='Desarrollador Web' ShowOrHiden={iconDownArrow} iconCompany={iconCompany} company='Clever Cloud' iconCalendar={iconCalendar} time='Julio 2024 - Diciembre 2024' idDescription={"descriptionCleverCloud"}
+            <ExperienceCard position='Desarrollador Web' ShowOrHiden={iconDownArrow} iconCompany={iconCompany} company='Clever Cloud' iconCalendar={iconCalendar} time='Julio 2024 - Enero 2025' idDescription={"descriptionCleverCloud"}
                 children={
                     <>
                         <DescriptionJob icon={iconRightArrow} description='Desarrollo de aplicaciones web utilizando Vue.js, PHP, JavaScript, CSS y Bootstrap.'/>

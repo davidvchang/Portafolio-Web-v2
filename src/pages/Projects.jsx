@@ -3,6 +3,7 @@ import ProjectCard from '../components/ProjectCard'
 import PelisDev from '../assets/img/Portadas/MockUpPelisDev.webp'
 import ClonX from '../assets/img/Portadas/MockUpClonX.webp'
 import Desarrollo from '../assets/img/Portadas/En-desarrollo-portada.webp'
+import Biblioteca from '../assets/img/Portadas/Sistema-Para-biblioteca.webp'
 import Technology from '../components/Technology'
 import BtnAction from '../components/BtnAction'
 
@@ -51,8 +52,8 @@ function Projects() {
                           >
             </ProjectCard>
 
-            <ProjectCard image={Desarrollo} 
-                          title='Sistema para biblioteca' 
+            <ProjectCard image={Biblioteca} 
+                          title='Sistema Para Biblioteca' 
                           description='Sistema fullstack para una biblioteca en la cual permita prestar libros, así como agregar nuevos libros, poder editar, eliminar cada libro, de la misma forma para los clientes.'
                           children={
                             <>
