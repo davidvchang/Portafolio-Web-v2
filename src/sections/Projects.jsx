@@ -6,6 +6,9 @@ import Desarrollo from '../assets/img/covers/En-desarrollo-portada.webp'
 import Ecommerce from '../assets/img/covers/Ecommerce.webp'
 
 import TechnologyUsed from '../components/TechnologyUsed'
+import BtnActionsProjects from '../components/BtnActionsProjects'
+
+import { Github, Link } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -21,6 +24,13 @@ const Projects = () => {
                         <TechnologyUsed name="Tailwind"/>
                     </>
                 }
+
+                children2={
+                    <>
+                        <BtnActionsProjects link="https://github.com/davidvchang/PelisDev" icon={<Github className='text-white w-5 h-5'/>} text="Ver repositorio"/>
+                        <BtnActionsProjects link="https://pelis-dev.netlify.app/" icon={<Link className='text-white w-5 h-5'/>} text="Live Demo"/>
+                    </>
+                }
             />
             <ProjectCard image={Biblioteca} title="Sistema para biblioteca" description="Sistema fullstack para una biblioteca en la cual permita prestar libros, así como agregar nuevos libros, poder editar, eliminar cada libro, de la misma forma para los clientes."
                 children={
@@ -30,6 +40,13 @@ const Projects = () => {
                         <TechnologyUsed name="Tailwind"/>
                         <TechnologyUsed name="Express.js"/>
                         <TechnologyUsed name="PostgreSQL"/>
+                    </>
+                }
+
+                children2={
+                    <>
+                        <BtnActionsProjects link="https://github.com/davidvchang/Sistema-para-biblioteca" icon={<Github className='text-white w-5 h-5'/>} text="Ver repositorio"/>
+                        {/* <BtnActionsProjects link="https://pelis-dev.netlify.app/" icon={<Link className='text-white w-5 h-5'/>} text="Live Demo"/> */}
                     </>
                 }
             />
@@ -43,6 +60,13 @@ const Projects = () => {
                         <TechnologyUsed name="MongoDB"/>
                     </>
                 }
+
+                children2={
+                    <>
+                        <BtnActionsProjects link="https://github.com/davidvchang/BarberShop" icon={<Github className='text-white w-5 h-5'/>} text="Ver repositorio"/>
+                        {/* <BtnActionsProjects link="https://pelis-dev.netlify.app/" icon={<Link className='text-white w-5 h-5'/>} text="Live Demo"/> */}
+                    </>
+                }
             />
             <ProjectCard image={Ecommerce} title="TechQuality Ecommerce" description="Ecommerce para una tienda ficticia de tecnologia. Permite registrarse, iniciar sesón, agregar productos al carrito y comprar por medio de mercadopago."
                 children={
@@ -52,6 +76,13 @@ const Projects = () => {
                         <TechnologyUsed name="Tailwind"/>
                         <TechnologyUsed name="Express.js"/>
                         <TechnologyUsed name="PostgreSQL"/>
+                    </>
+                }
+
+                children2={
+                    <>
+                        <BtnActionsProjects link="https://github.com/davidvchang/TechQuality---Ecommerce" icon={<Github className='text-white w-5 h-5'/>} text="Ver repositorio"/>
+                        {/* <BtnActionsProjects link="https://pelis-dev.netlify.app/" icon={<Link className='text-white w-5 h-5'/>} text="Live Demo"/> */}
                     </>
                 }
             />
