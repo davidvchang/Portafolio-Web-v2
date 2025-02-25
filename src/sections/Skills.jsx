@@ -1,7 +1,7 @@
 import React from 'react'
 import SkillCard from '../components/SkillCard'
 
-import { Globe, CodeXml, Database, Bolt } from 'lucide-react';
+import { Globe, CodeXml, Database, Bolt, Code } from 'lucide-react';
 import TextSkill from '../components/TextSkill';
 
 const Skills = () => {
@@ -9,7 +9,7 @@ const Skills = () => {
     <section className='flex flex-col w-full text-white gap-16 pt-10'>
         <span className='text-4xl text-center'>Habilidades</span>
 
-        <div className='grid grid-cols-4'>
+        <div className='grid grid-cols-5'>
             <SkillCard icon={<Globe/>} title='Frontend' 
                 children={
                     <>
@@ -42,6 +42,17 @@ const Skills = () => {
                         <TextSkill text='MongoDB'/>
                         <TextSkill text='MySQL'/>
                         <TextSkill text='SQL Server'/>
+                    </>
+                }
+            
+            />
+            <SkillCard icon={<Code/>} title='Lenguajes de programación' 
+                children={
+                    <>
+                        <TextSkill text='JavaScript'/>
+                        <TextSkill text='TypeScripts'/>
+                        <TextSkill text='Python'/>
+                        <TextSkill text='C#'/>
                     </>
                 }
             
