@@ -6,7 +6,7 @@ import ProfilePhoto from '../assets/img/FotoPerfil.webp'
 
 const Home = () => {
   return (
-    <section className='flex justify-between items-center w-full mt-16' style={{height: "calc(100vh - 64px)"}}>
+    <section className='flex justify-between items-center w-full mt-16' style={{height: "calc(100vh - 64px)"}} id='home'>
         {/* PRESENTATION */}
         <div className='flex flex-col text-white'>
             <div className='flex flex-col gap-10'>

@@ -6,7 +6,7 @@ import TextSkill from '../components/TextSkill';
 
 const Skills = () => {
   return (
-    <section className='flex flex-col w-full text-white gap-16 pt-10'>
+    <section className='flex flex-col w-full text-white gap-16 pt-10'id='skills'>
         <span className='text-4xl text-center'>Habilidades</span>
 
         <div className='grid grid-cols-5 pb-10'>

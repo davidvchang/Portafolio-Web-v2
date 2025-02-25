@@ -5,7 +5,7 @@ import SocialNetworkButton from '../components/SocialNetworkButton';
 
 const ContactMe = () => {
   return (
-    <section className='flex flex-col w-full text-white gap-16 pt-10'>
+    <section className='flex flex-col w-full text-white gap-16 pt-10' id='contactme'>
       <span className='text-4xl text-center'>Contactame</span>
 
         <div className='flex flex-col gap-10 items-center pb-10'>

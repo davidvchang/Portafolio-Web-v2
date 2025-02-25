@@ -9,7 +9,7 @@ import TechnologyUsed from '../components/TechnologyUsed'
 
 const Projects = () => {
   return (
-    <section className='flex flex-col w-full text-white gap-16 pt-10'>
+    <section className='flex flex-col w-full text-white gap-16 pt-10' id='projects'>
         <span className='text-4xl text-center'>Proyectos</span>
 
         <div className='grid grid-cols-3 gap-y-6 pb-10'>
