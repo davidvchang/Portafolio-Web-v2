@@ -1,5 +1,6 @@
 import Home from "./sections/Home"
 import NavBar from "./sections/NavBar"
+import Projects from "./sections/Projects"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <NavBar/>
       <div className="w-[90%] h-full flex flex-col items-center">
         <Home/>
+        <Projects/>
 
       </div>
     </main>
