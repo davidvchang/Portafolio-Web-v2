@@ -26,8 +26,8 @@ const ContactMe = () => {
             <span className='text-[17px] text-center'>Otras redes sociales</span>
 
             <div className='flex gap-5'>    
-                <SocialNetworkButton icon={<Instagram className='w-5 h-5'/>} />
-                <SocialNetworkButton icon={<Twitter className='w-5 h-5'/>} />
+                <SocialNetworkButton link="https://www.instagram.com/_davidvalenzuelac" icon={<Instagram className='w-5 h-5'/>} />
+                <SocialNetworkButton link="https://x.com/DavidChangDev/" icon={<Twitter className='w-5 h-5'/>} />
             </div>
       </div>
     </section>
