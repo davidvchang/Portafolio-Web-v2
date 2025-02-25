@@ -1,7 +1,7 @@
 
-const Nav = ({link, text}) => {
+const Nav = ({text, onClick}) => {
   return (
-    <a href={link} className="hover:text-emerald-400 hover:transition duration-300">{text}</a>
+    <button className="hover:text-emerald-400 hover:transition duration-300 cursor-pointer" onClick={onClick}>{text}</button>
   )
 }
 
