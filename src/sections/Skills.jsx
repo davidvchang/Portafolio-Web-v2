@@ -9,7 +9,7 @@ const Skills = () => {
     <section className='flex flex-col w-full text-white gap-16 pt-10'>
         <span className='text-4xl text-center'>Habilidades</span>
 
-        <div className='grid grid-cols-5'>
+        <div className='grid grid-cols-5 pb-10'>
             <SkillCard icon={<Globe/>} title='Frontend' 
                 children={
                     <>
