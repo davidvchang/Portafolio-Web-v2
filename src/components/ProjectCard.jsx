@@ -14,12 +14,9 @@ const ProjectCard = ({image, title, description, children, children2}) => {
         <div className='w-full h-52 overflow-hidden relative' onMouseEnter={toggleVisibility} onMouseLeave={toggleVisibility}>
             <img src={image} alt=""  className='w-full h-full object-cover'/>
 
-            {visibility && (
-              <div className='absolute top-0 w-full h-full backdrop-blur-xs flex items-end p-5 justify-between'>
+              <div className={`absolute top-0 w-full h-full backdrop-blur-xs flex items-end p-5 justify-between transition-all duration-300 ease-in-out ${visibility ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
                 {children2}
               </div>
-
-            )}
         </div>
 
         <div className='p-5 flex flex-col'>
