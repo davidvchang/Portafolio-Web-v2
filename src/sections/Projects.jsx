@@ -15,7 +15,7 @@ const Projects = () => {
     <section className='flex flex-col w-full text-white gap-16 pt-10' id='projects'>
         <span className='text-4xl text-center'>Proyectos</span>
 
-        <div className='grid grid-cols-3 gap-y-6 pb-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 pb-10'>
             <ProjectCard image={PelisDev} title="PelisDev" description="Página web de pelicula inspirada en Cuevana, está hecha en React y estilada con Tailwind, se realizó solo la parte Front - End, se puede buscar peliculas por nombre o por categoría, así como cambiar de página." 
                 children={
                     <>
