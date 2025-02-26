@@ -9,7 +9,7 @@ const Skills = () => {
     <section className='flex flex-col w-full text-white gap-16 pt-10'id='skills'>
         <span className='text-4xl text-center'>Habilidades</span>
 
-        <div className='grid id-cols-auto-fit justify-items-center gap-y-5 md: w-full md:grid-cols-3 lg:grid-cols-5 pb-10'>
+        <div className='grid justify-items-center gap-y-5 md: w-full md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 pb-10'>
             <SkillCard icon={<Globe/>} title='Frontend' 
                 children={
                     <>

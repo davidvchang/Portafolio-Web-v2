@@ -6,7 +6,7 @@ import ProfilePhoto from '../assets/img/FotoPerfil.webp'
 
 const Home = () => {
   return (
-    <section className='flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full mt-16 gap-7 lg:gap-0' style={{height: "calc(100vh - 64px)"}} id='home'>
+    <section className='flex flex-col-reverse lg:flex-row lg:justify-around items-center w-full lg:px-5 xl:px-0 mt-16 gap-7 lg:gap-0' style={{height: "calc(100vh - 64px)"}} id='home'>
         {/* PRESENTATION */}
         <div className='flex flex-col text-white'>
             <div className='flex flex-col gap-10'>
@@ -23,7 +23,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center gap-7'>
+                <div className='flex items-center md:justify-center lg:justify-start gap-7'>
                     <a href="https://drive.google.com/file/d/1DLXqgBfYsYIHuVxSn637PdtTKHWkh2IZ/view?usp=sharing" target='_blank' className='w-fit h-fit px-12 py-3 rounded-full font-medium bg-gradient-to-r from-teal-400 to-blue-500 text-white hover:brightness-90 hover:transition duration-300'>Ver CV</a>
                     
                     <div className='flex gap-4'>
