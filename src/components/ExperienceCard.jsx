@@ -11,7 +11,7 @@ const ExperienceCard = ({position, company, time}) => {
 }
 
   return (
-    <div className='flex flex-col w-[70%] bg-white/5 backdrop-blur-xl p-8 rounded-xl border border-white/10 hover:border-teal-400/50 transition-colors'>
+    <div className='flex flex-col w-[25rem] md:w-[70%] bg-white/5 backdrop-blur-xl p-8 rounded-xl border border-white/10 hover:border-teal-400/50 transition-colors'>
         <div className='flex justify-between items-center'>
           <span className='text-2xl font-semibold mb-1'>{position}</span>
           <button className='bg-gradient-to-r from-teal-400/10 to-blue-500/10 rounded-lg p-2 border border-slate-700 hover:bg-teal-700 hover:transition duration-300 cursor-pointer' onClick={toggleVisibility}><ChevronDown className={`w-6 h-6 text-white transition-transform duration-300 ${
