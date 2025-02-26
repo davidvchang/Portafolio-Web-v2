@@ -6,16 +6,18 @@ import ProfilePhoto from '../assets/img/FotoPerfil.webp'
 
 const Home = () => {
   return (
-    <section className='flex justify-between items-center w-full mt-16' style={{height: "calc(100vh - 64px)"}} id='home'>
+    <section className='flex flex-col-reverse lg:flex-row lg:justify-between items-center w-full mt-16 gap-7 lg:gap-0' style={{height: "calc(100vh - 64px)"}} id='home'>
         {/* PRESENTATION */}
         <div className='flex flex-col text-white'>
             <div className='flex flex-col gap-10'>
-                <div className='flex flex-col gap-5'>
-                    <span className='border text-sm select-none w-fit h-fit px-2 border-emerald-700 text-emerald-400 font-light rounded-full'>Disponible para trabajar</span>
+                <div className='flex flex-col gap-2 lg:gap-5'>
+                    <div className='flex w-full justify-center lg:justify-start'>
+                        <span className='border text-sm text-center select-none w-fit h-fit px-2 border-emerald-700 text-emerald-400 font-light rounded-full'>Disponible para trabajar</span>
+                    </div>
                     
-                    <div className='flex flex-col'>
-                        <span className='text-5xl font-light'>Hola, mi nombre es</span>
-                        <span className='text-7xl font-semibold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent'>David Valenzuela</span>
+                    <div className='flex flex-col w-full items-center lg:items-start'>
+                        <span className='text-4xl lg:text-5xl font-light'>Hola, mi nombre es</span>
+                        <span className='text-7xl text-center lg:text-start font-semibold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent'>David Valenzuela</span>
                         <span className='text-2xl font-light text-slate-300'>Ing. en Sistemas Computacionales</span>
 
                     </div>
@@ -35,8 +37,8 @@ const Home = () => {
         </div>
 
         {/* PHOTO */}
-        <div className='w-[26rem] h-[26rem] bg-slate-100 rounded-full overflow-hidden relative'>
-            <img src={ProfilePhoto} alt="" className='w-[27rem] h-[27rem] object-contain absolute -bottom-5 -left-2'/>
+        <div className='min-w-80 min-h-80 lg:min-w-[26rem] lg:min-h-[26rem] bg-slate-100 rounded-full overflow-hidden relative'>
+            <img src={ProfilePhoto} alt="" className='w-[336px] h-[336px] lg:w-[27rem] lg:h-[27rem] object-contain absolute -bottom-5 -left-2'/>
         </div>
       
     </section>

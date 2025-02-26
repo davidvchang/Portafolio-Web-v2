@@ -10,7 +10,7 @@ function App() {
   return (
     <main className="w-screen min-h-screen  flex flex-col items-center">
       <NavBar/>
-      <div className="w-[90%] h-full flex flex-col items-center">
+      <div className="w-[90%] 2xl:w-[67%] h-full flex flex-col items-center">
         <Home/>
         <Projects/>
         <Skills/>
