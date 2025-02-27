@@ -11,6 +11,13 @@ const NavBar = () => {
     const section = document.getElementById(id);
     if(section) {
       section.scrollIntoView({behavior: "smooth"})
+    }
+  }
+
+  const scrollToSectionMovil = (id) => {
+    const section = document.getElementById(id);
+    if(section) {
+      section.scrollIntoView({behavior: "smooth"})
       setVisibilityMenu(!visibilityMenu)
     }
   }
@@ -56,11 +63,11 @@ const NavBar = () => {
           >
             <div className="absolute top-16 z-50 bg-black/90 backdrop-blur-xl w-full">
               <div className='flex flex-col items-center w-full gap-10 py-10'>
-                  <Nav onClick={() => scrollToSection("home")} text="Inicio"/>
-                  <Nav onClick={() => scrollToSection("projects")} text="Proyectos"/>
-                  <Nav onClick={() => scrollToSection("skills")} text="Habilidades"/>
-                  <Nav onClick={() => scrollToSection("experience")} text="Experiencia"/>
-                  <Nav onClick={() => scrollToSection("contactme")} text="Contactame"/>
+                  <Nav onClick={() => scrollToSectionMovil("home")} text="Inicio"/>
+                  <Nav onClick={() => scrollToSectionMovil("projects")} text="Proyectos"/>
+                  <Nav onClick={() => scrollToSectionMovil("skills")} text="Habilidades"/>
+                  <Nav onClick={() => scrollToSectionMovil("experience")} text="Experiencia"/>
+                  <Nav onClick={() => scrollToSectionMovil("contactme")} text="Contactame"/>
               </div>
             </div>
 
