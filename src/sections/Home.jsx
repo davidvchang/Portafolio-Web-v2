@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
 
                 <div className='flex items-center md:justify-center lg:justify-start gap-7'>
-                    <a href="https://drive.google.com/file/d/1DLXqgBfYsYIHuVxSn637PdtTKHWkh2IZ/view?usp=sharing" target='_blank' className='w-fit h-fit px-12 py-3 rounded-full font-medium bg-gradient-to-r from-teal-400 to-blue-500 text-white hover:brightness-90 hover:transition duration-300'>Ver CV</a>
+                    <a href="https://drive.google.com/file/d/1YAkwZtXxrJ_fO1OVyi9_shz-eEe8-XJK/view?usp=sharing" target='_blank' className='w-fit h-fit px-12 py-3 rounded-full font-medium bg-gradient-to-r from-teal-400 to-blue-500 text-white hover:brightness-90 hover:transition duration-300'>Ver CV</a>
                     
                     <div className='flex gap-4'>
                         <SocialNetworkButton link="https://github.com/davidvchang" icon={<Github className='w-5 h-5'/>}/>
